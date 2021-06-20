@@ -1,0 +1,16 @@
+title: y60Gie
+description: o0ooo0000ooo
+template:
+  repo: y60gie-template
+  name: y60gie
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
